@@ -1,0 +1,14 @@
+{
+  "name": "nobodys",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "watch:sass": "node-sass sass/main.scss css/main.css -w"
+  },
+  "author": "TadasBalsys",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^4.13.1"
+  }
+}
