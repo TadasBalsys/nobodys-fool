@@ -27,5 +27,13 @@
 // @import 'themes/theme';
 // @import 'themes/admin';
 
+@import "abstracts/variables";
+
 @import "base/reset";
 @import "base/typography";
+
+@import "layout/header";
+
+@import "components/button";
+
+@import "pages/home";
