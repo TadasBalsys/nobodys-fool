@@ -1,0 +1,31 @@
+.section-one {
+  grid-column: col-start 1 / col-end 12;
+  display: grid;
+  grid-template-columns: 1fr 55%;
+  grid-template-rows: 1fr repeat(3, min-content) 1fr;
+  background-color: $color-grey-light-4;
+  border-top: 4px solid $color-grey-light-3;
+  border-bottom: 4px solid $color-grey-light-3;
+  padding: 1.5rem 2rem 1rem 2rem;
+
+  &__heading {
+    grid-area: 2 / 1 / span 1 / span 1;
+  }
+
+  &__paragraph {
+    grid-area: 3 / 1 / span 1 / span 1;
+    padding: 2rem 0;
+  }
+
+  &__link {
+    grid-area: 4 / 1 / span 1 / span 1;
+    width: 18rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__carousel {
+    grid-area: 1 / 2 / -1 / span 1;
+  }
+}

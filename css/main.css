@@ -24,6 +24,10 @@ html {
   font-size: 4rem;
   font-weight: 400; }
 
+.heading--2 {
+  font-size: 3.5rem;
+  font-weight: 400; }
+
 .header {
   grid-column: col-start 1 / col-end 12; }
   .header__user-nav {
@@ -126,12 +130,64 @@ html {
     color: #7a7a7a;
     margin-right: 1rem; }
 
+.section-one {
+  grid-column: col-start 1 / col-end 12;
+  display: grid;
+  grid-template-columns: 1fr 55%;
+  grid-template-rows: 1fr repeat(3, min-content) 1fr;
+  background-color: #eeeeee;
+  border-top: 4px solid #dfdddd;
+  border-bottom: 4px solid #dfdddd;
+  padding: 1.5rem 2rem 1rem 2rem; }
+  .section-one__heading {
+    grid-area: 2 / 1 / span 1 / span 1; }
+  .section-one__paragraph {
+    grid-area: 3 / 1 / span 1 / span 1;
+    padding: 2rem 0; }
+  .section-one__link {
+    grid-area: 4 / 1 / span 1 / span 1;
+    width: 18rem;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  .section-one__carousel {
+    grid-area: 1 / 2 / -1 / span 1; }
+
 .btn {
   background-color: #4aa4f8;
   color: #ffffff;
   padding: 1rem 2rem;
   border-radius: 4px;
   font-size: 1.8rem; }
+
+.carousel {
+  height: 44rem;
+  background-color: #7a7a7a;
+  position: relative;
+  overflow: hidden; }
+  .carousel__image {
+    display: none;
+    height: 100%;
+    width: 100%; }
+    .carousel__image--active {
+      display: block;
+      text-align: center; }
+  .carousel__control-box {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 2rem;
+    left: 2rem; }
+  .carousel__controller {
+    border: 2px solid black;
+    border-radius: 50%;
+    display: inline-block;
+    height: 2rem;
+    width: 2rem;
+    margin-right: 0.5rem;
+    cursor: pointer; }
+    .carousel__controller:hover, .carousel__controller--active {
+      background-color: black; }
 
 .container {
   display: grid;

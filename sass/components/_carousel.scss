@@ -1,0 +1,42 @@
+.carousel {
+  height: 44rem;
+  background-color: $color-grey-light-1;
+
+  position: relative;
+  overflow: hidden;
+
+  &__image {
+    display: none;
+    height: 100%;
+    width: 100%;
+
+    &--active {
+      display: block;
+      text-align: center;
+    }
+  }
+
+  &__control-box {
+    display: flex;
+    align-items: center;
+
+    position: absolute;
+    bottom: 2rem;
+    left: 2rem;
+  }
+
+  &__controller {
+    border: 2px solid black;
+    border-radius: 50%;
+    display: inline-block;
+    height: 2rem;
+    width: 2rem;
+    margin-right: 0.5rem;
+    cursor: pointer;
+
+    &:hover,
+    &--active {
+      background-color: black;
+    }
+  }
+}
