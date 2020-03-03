@@ -1,0 +1,28 @@
+.contact-form {
+
+  &__label {
+    display: none;
+  }
+
+  &__input,
+  &__message {
+    padding: 1rem;
+    width: 100%;
+    background-color: $color-grey-light-1;
+    border-radius: 4px;
+
+    &::placeholder {
+      color: $color-grey-light-3;
+    }
+  }
+
+  &__input {
+    margin-bottom: 1rem;
+  }
+
+  &__message {
+    border: none;
+    height: 9vh;
+    margin-bottom: 2rem;
+  }
+}

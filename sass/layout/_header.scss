@@ -1,6 +1,7 @@
 .header {
   grid-column: col-start 1 / col-end 12;
-
+  background-color: $bg-color-light;
+  
   &__user-nav {
     background-color: #504e4e;
     display: flex;

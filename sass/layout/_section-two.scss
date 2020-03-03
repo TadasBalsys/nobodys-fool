@@ -1,9 +1,9 @@
 .section-two {
   grid-column: col-start 1 / col-end 12;
+  background-color: $bg-color-light;
 
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 1fr) minmax(min-content, 1fr);
   align-items: center;
   justify-items: center;
 
@@ -33,14 +33,5 @@
     text-align: center;
     font-size: 1.2rem;
     color: $color-grey-light-1;
-  }
-
-  #price-box-one {
-  }
-  #price-box-two {
-  }
-  #price-box-three {
-  }
-  #price-box-four {
   }
 }

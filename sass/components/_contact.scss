@@ -1,8 +1,10 @@
 .contact {
-  width: 100%;
+  width: 96%;
   grid-area: auto / 1 / span 1 / -1;
   background-color: $color-grey-light-2;
   padding: 3rem;
+  margin: 3rem 0 4rem 0;
+  border-radius: 2px;
 
   display: grid;
   grid-template-columns: max-content 1fr max-content;
